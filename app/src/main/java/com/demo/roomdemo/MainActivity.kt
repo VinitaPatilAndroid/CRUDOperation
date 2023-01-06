@@ -40,7 +40,6 @@ class MainActivity : AppCompatActivity(), RecyclerViewAdapter.RowClickListener {
             val name  = nameInput.text.toString()
             val email  = emailInput.text.toString()
 
-
             if(saveButton.text.equals("Save")) {
                 val user = UserEntity(0, name, email)
                 viewModel.insertUserInfo(user)

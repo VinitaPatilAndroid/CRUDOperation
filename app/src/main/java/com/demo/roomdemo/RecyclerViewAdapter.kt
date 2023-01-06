@@ -6,6 +6,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.demo.roomdemo.db.UserEntity
 import kotlinx.android.synthetic.main.recyclerview_row.view.*
+import java.text.SimpleDateFormat
+import java.util.*
 
 class RecyclerViewAdapter(val listener: RowClickListener): RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder>() {
 
@@ -42,13 +44,18 @@ class RecyclerViewAdapter(val listener: RowClickListener): RecyclerView.Adapter<
         val tvPhone = view.tvPhone
         val deleteUserID = view.deleteUserID
 
+
+
         fun bind(data: UserEntity) {
             tvName.text = data.name
 
             tvEmail.text = data.email
 
 
-           // tvPhone.text = data.phone
+          //  val currentTime: Date = Calendar.getInstance().getTime()
+            val currentDate: String =
+                SimpleDateFormat("dd-MM-yyyy HH:mm:ss", Locale.getDefault()).format(Date())
+            tvPhone.text = currentDate
 
             deleteUserID.setOnClickListener {
                 listener.onDeleteUserClickListener(data)
