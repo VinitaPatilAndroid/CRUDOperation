@@ -9,17 +9,20 @@ import kotlinx.android.synthetic.main.recyclerview_row.view.*
 import java.text.SimpleDateFormat
 import java.util.*
 
-class RecyclerViewAdapter(val listener: RowClickListener): RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder>() {
+class RecyclerViewAdapter(/*val listener: RowClickListener*/
+    private val onItemClick:(UserEntity) -> Unit,private val deleteUser:(UserEntity)-> Unit
+): RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder>() {
 
     var items  = ArrayList<UserEntity>()
 
     fun setListData(data: ArrayList<UserEntity>) {
         this.items = data
+        notifyDataSetChanged()
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerViewAdapter.MyViewHolder {
        val inflater = LayoutInflater.from(parent.context).inflate(R.layout.recyclerview_row, parent, false)
-        return MyViewHolder(inflater, listener)
+        return MyViewHolder(inflater)
     }
 
     override fun getItemCount(): Int {
@@ -28,16 +31,20 @@ class RecyclerViewAdapter(val listener: RowClickListener): RecyclerView.Adapter<
 
     override fun onBindViewHolder(holder: RecyclerViewAdapter.MyViewHolder, position: Int) {
 
-        holder.itemView.setOnClickListener {
+        /*holder.itemView.setOnClickListener {
             listener.onItemClickListener(items[position])
+        }*/
+        holder.itemView.setOnClickListener { 
+           onItemClick(items[position])
         }
         holder.bind(items[position])
+        holder.deleteUserID.setOnClickListener {
+            deleteUser(items[position])
+        }
 
     }
 
-
-
-    class MyViewHolder(view: View, val listener: RowClickListener): RecyclerView.ViewHolder(view) {
+    class MyViewHolder(view: View): RecyclerView.ViewHolder(view) {
 
         val tvName = view.tvName
         val tvEmail = view.tvEmail
@@ -48,23 +55,20 @@ class RecyclerViewAdapter(val listener: RowClickListener): RecyclerView.Adapter<
 
         fun bind(data: UserEntity) {
             tvName.text = data.name
-
             tvEmail.text = data.email
 
-
           //  val currentTime: Date = Calendar.getInstance().getTime()
-            val currentDate: String =
-                SimpleDateFormat("dd-MM-yyyy HH:mm:ss", Locale.getDefault()).format(Date())
-            tvPhone.text = currentDate
+            tvPhone.text = getDate.getCurrentDateTime().toString()
 
-            deleteUserID.setOnClickListener {
+           /* deleteUserID.setOnClickListener {
                 listener.onDeleteUserClickListener(data)
-            }
+            }*/
+
         }
     }
 
-    interface RowClickListener{
+ /*   interface RowClickListener{
         fun onDeleteUserClickListener(user: UserEntity)
         fun onItemClickListener(user: UserEntity)
-    }
+    }*/
 }

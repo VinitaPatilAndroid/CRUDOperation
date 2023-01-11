@@ -9,13 +9,13 @@ interface UserDao {
     @Query("SELECT * FROM userinfo ORDER BY id DESC")
     fun getAllUserInfo(): List<UserEntity>?
 
-    @Insert
-    fun insertUser(user: UserEntity?)
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+   suspend fun insertUser(user: UserEntity?)
 
-    @Delete
-    fun deleteUser(user: UserEntity?)
+   @Delete
+   suspend fun deleteUser(user: UserEntity?)
 
     @Update
-    fun updateUser(user: UserEntity?)
+   suspend fun updateUser(user: UserEntity?)
 
 }
