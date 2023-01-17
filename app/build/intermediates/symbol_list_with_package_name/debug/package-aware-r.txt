@@ -977,6 +977,9 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string app_name
+string enter_your_email
+string enter_your_name
+string save
 string search_menu_title
 string status_bar_notification_info_overflow
 style AlertDialog_AppCompat

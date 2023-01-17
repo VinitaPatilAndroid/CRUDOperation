@@ -2,12 +2,12 @@ package com.demo.roomdemo;
 
 import java.lang.System;
 
-@kotlin.Metadata(mv = {1, 1, 16}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000@\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0002\u001c\u001dB\r\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u00a2\u0006\u0002\u0010\u0005J\b\u0010\u000f\u001a\u00020\u0010H\u0016J\u0018\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u00022\u0006\u0010\u0014\u001a\u00020\u0010H\u0016J\u0018\u0010\u0015\u001a\u00020\u00022\u0006\u0010\u0016\u001a\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u0010H\u0016J\u001e\u0010\u0019\u001a\u00020\u00122\u0016\u0010\u001a\u001a\u0012\u0012\u0004\u0012\u00020\b0\u0007j\b\u0012\u0004\u0012\u00020\b`\u001bR \u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u0007X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\t\u0010\n\"\u0004\b\u000b\u0010\fR\u0011\u0010\u0003\u001a\u00020\u0004\u00a2\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000e\u00a8\u0006\u001e"}, d2 = {"Lcom/demo/roomdemo/RecyclerViewAdapter;", "Landroidx/recyclerview/widget/RecyclerView$Adapter;", "Lcom/demo/roomdemo/RecyclerViewAdapter$MyViewHolder;", "listener", "Lcom/demo/roomdemo/RecyclerViewAdapter$RowClickListener;", "(Lcom/demo/roomdemo/RecyclerViewAdapter$RowClickListener;)V", "items", "Ljava/util/ArrayList;", "Lcom/demo/roomdemo/db/UserEntity;", "getItems", "()Ljava/util/ArrayList;", "setItems", "(Ljava/util/ArrayList;)V", "getListener", "()Lcom/demo/roomdemo/RecyclerViewAdapter$RowClickListener;", "getItemCount", "", "onBindViewHolder", "", "holder", "position", "onCreateViewHolder", "parent", "Landroid/view/ViewGroup;", "viewType", "setListData", "data", "Lkotlin/collections/ArrayList;", "MyViewHolder", "RowClickListener", "app_debug"})
+@kotlin.Metadata(mv = {1, 1, 16}, bv = {1, 0, 3}, k = 1, d1 = {"\u00006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0001\u001aB-\u0012\u0012\u0010\u0003\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00060\u0004\u0012\u0012\u0010\u0007\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00060\u0004\u00a2\u0006\u0002\u0010\bJ\b\u0010\u000f\u001a\u00020\u0010H\u0016J\u0018\u0010\u0011\u001a\u00020\u00062\u0006\u0010\u0012\u001a\u00020\u00022\u0006\u0010\u0013\u001a\u00020\u0010H\u0016J\u0018\u0010\u0014\u001a\u00020\u00022\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u0010H\u0016J\u0014\u0010\u0018\u001a\u00020\u00062\f\u0010\u0019\u001a\b\u0012\u0004\u0012\u00020\u00050\nR\u001a\u0010\u0007\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00060\u0004X\u0082\u0004\u00a2\u0006\u0002\n\u0000R \u0010\t\u001a\b\u0012\u0004\u0012\u00020\u00050\nX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u000b\u0010\f\"\u0004\b\r\u0010\u000eR\u001a\u0010\u0003\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00060\u0004X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u001b"}, d2 = {"Lcom/demo/roomdemo/RecyclerViewAdapter;", "Landroidx/recyclerview/widget/RecyclerView$Adapter;", "Lcom/demo/roomdemo/RecyclerViewAdapter$MyViewHolder;", "onItemClick", "Lkotlin/Function1;", "Lcom/demo/roomdemo/db/UserEntity;", "", "deleteUser", "(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)V", "items", "Ljava/util/ArrayList;", "getItems", "()Ljava/util/ArrayList;", "setItems", "(Ljava/util/ArrayList;)V", "getItemCount", "", "onBindViewHolder", "holder", "position", "onCreateViewHolder", "parent", "Landroid/view/ViewGroup;", "viewType", "setListData", "data", "MyViewHolder", "app_debug"})
 public final class RecyclerViewAdapter extends androidx.recyclerview.widget.RecyclerView.Adapter<com.demo.roomdemo.RecyclerViewAdapter.MyViewHolder> {
     @org.jetbrains.annotations.NotNull()
     private java.util.ArrayList<com.demo.roomdemo.db.UserEntity> items;
-    @org.jetbrains.annotations.NotNull()
-    private final com.demo.roomdemo.RecyclerViewAdapter.RowClickListener listener = null;
+    private final kotlin.jvm.functions.Function1<com.demo.roomdemo.db.UserEntity, kotlin.Unit> onItemClick = null;
+    private final kotlin.jvm.functions.Function1<com.demo.roomdemo.db.UserEntity, kotlin.Unit> deleteUser = null;
     
     @org.jetbrains.annotations.NotNull()
     public final java.util.ArrayList<com.demo.roomdemo.db.UserEntity> getItems() {
@@ -39,24 +39,18 @@ public final class RecyclerViewAdapter extends androidx.recyclerview.widget.Recy
     com.demo.roomdemo.RecyclerViewAdapter.MyViewHolder holder, int position) {
     }
     
-    @org.jetbrains.annotations.NotNull()
-    public final com.demo.roomdemo.RecyclerViewAdapter.RowClickListener getListener() {
-        return null;
-    }
-    
     public RecyclerViewAdapter(@org.jetbrains.annotations.NotNull()
-    com.demo.roomdemo.RecyclerViewAdapter.RowClickListener listener) {
+    kotlin.jvm.functions.Function1<? super com.demo.roomdemo.db.UserEntity, kotlin.Unit> onItemClick, @org.jetbrains.annotations.NotNull()
+    kotlin.jvm.functions.Function1<? super com.demo.roomdemo.db.UserEntity, kotlin.Unit> deleteUser) {
         super();
     }
     
-    @kotlin.Metadata(mv = {1, 1, 16}, bv = {1, 0, 3}, k = 1, d1 = {"\u00004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0018\u00002\u00020\u0001B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0002\u0010\u0006J\u000e\u0010\u0016\u001a\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u0019R\u0019\u0010\u0007\u001a\n \t*\u0004\u0018\u00010\b0\b\u00a2\u0006\b\n\u0000\u001a\u0004\b\n\u0010\u000bR\u0011\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\b\n\u0000\u001a\u0004\b\f\u0010\rR\u0019\u0010\u000e\u001a\n \t*\u0004\u0018\u00010\u000f0\u000f\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u0011R\u0019\u0010\u0012\u001a\n \t*\u0004\u0018\u00010\u000f0\u000f\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0011R\u0019\u0010\u0014\u001a\n \t*\u0004\u0018\u00010\u000f0\u000f\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0011\u00a8\u0006\u001a"}, d2 = {"Lcom/demo/roomdemo/RecyclerViewAdapter$MyViewHolder;", "Landroidx/recyclerview/widget/RecyclerView$ViewHolder;", "view", "Landroid/view/View;", "listener", "Lcom/demo/roomdemo/RecyclerViewAdapter$RowClickListener;", "(Landroid/view/View;Lcom/demo/roomdemo/RecyclerViewAdapter$RowClickListener;)V", "deleteUserID", "Landroid/widget/ImageView;", "kotlin.jvm.PlatformType", "getDeleteUserID", "()Landroid/widget/ImageView;", "getListener", "()Lcom/demo/roomdemo/RecyclerViewAdapter$RowClickListener;", "tvEmail", "Landroid/widget/TextView;", "getTvEmail", "()Landroid/widget/TextView;", "tvName", "getTvName", "tvPhone", "getTvPhone", "bind", "", "data", "Lcom/demo/roomdemo/db/UserEntity;", "app_debug"})
+    @kotlin.Metadata(mv = {1, 1, 16}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J\u000e\u0010\u0012\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u0015R\u0019\u0010\u0005\u001a\n \u0007*\u0004\u0018\u00010\u00060\u0006\u00a2\u0006\b\n\u0000\u001a\u0004\b\b\u0010\tR\u0019\u0010\n\u001a\n \u0007*\u0004\u0018\u00010\u000b0\u000b\u00a2\u0006\b\n\u0000\u001a\u0004\b\f\u0010\rR\u0019\u0010\u000e\u001a\n \u0007*\u0004\u0018\u00010\u000b0\u000b\u00a2\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\rR\u0019\u0010\u0010\u001a\n \u0007*\u0004\u0018\u00010\u000b0\u000b\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\r\u00a8\u0006\u0016"}, d2 = {"Lcom/demo/roomdemo/RecyclerViewAdapter$MyViewHolder;", "Landroidx/recyclerview/widget/RecyclerView$ViewHolder;", "view", "Landroid/view/View;", "(Landroid/view/View;)V", "deleteUserID", "Landroid/widget/ImageView;", "kotlin.jvm.PlatformType", "getDeleteUserID", "()Landroid/widget/ImageView;", "tvEmail", "Landroid/widget/TextView;", "getTvEmail", "()Landroid/widget/TextView;", "tvName", "getTvName", "tvPhone", "getTvPhone", "bind", "", "data", "Lcom/demo/roomdemo/db/UserEntity;", "app_debug"})
     public static final class MyViewHolder extends androidx.recyclerview.widget.RecyclerView.ViewHolder {
         private final android.widget.TextView tvName = null;
         private final android.widget.TextView tvEmail = null;
         private final android.widget.TextView tvPhone = null;
         private final android.widget.ImageView deleteUserID = null;
-        @org.jetbrains.annotations.NotNull()
-        private final com.demo.roomdemo.RecyclerViewAdapter.RowClickListener listener = null;
         
         public final android.widget.TextView getTvName() {
             return null;
@@ -78,25 +72,9 @@ public final class RecyclerViewAdapter extends androidx.recyclerview.widget.Recy
         com.demo.roomdemo.db.UserEntity data) {
         }
         
-        @org.jetbrains.annotations.NotNull()
-        public final com.demo.roomdemo.RecyclerViewAdapter.RowClickListener getListener() {
-            return null;
-        }
-        
         public MyViewHolder(@org.jetbrains.annotations.NotNull()
-        android.view.View view, @org.jetbrains.annotations.NotNull()
-        com.demo.roomdemo.RecyclerViewAdapter.RowClickListener listener) {
+        android.view.View view) {
             super(null);
         }
-    }
-    
-    @kotlin.Metadata(mv = {1, 1, 16}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\bf\u0018\u00002\u00020\u0001J\u0010\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H&J\u0010\u0010\u0006\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H&\u00a8\u0006\u0007"}, d2 = {"Lcom/demo/roomdemo/RecyclerViewAdapter$RowClickListener;", "", "onDeleteUserClickListener", "", "user", "Lcom/demo/roomdemo/db/UserEntity;", "onItemClickListener", "app_debug"})
-    public static abstract interface RowClickListener {
-        
-        public abstract void onDeleteUserClickListener(@org.jetbrains.annotations.NotNull()
-        com.demo.roomdemo.db.UserEntity user);
-        
-        public abstract void onItemClickListener(@org.jetbrains.annotations.NotNull()
-        com.demo.roomdemo.db.UserEntity user);
     }
 }

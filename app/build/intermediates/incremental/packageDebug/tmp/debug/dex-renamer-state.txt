@@ -1,4 +1,4 @@
-#Fri Jan 06 17:21:18 IST 2023
+#Wed Jan 11 14:18:58 IST 2023
 base.1=/home/vinita/AndroidStudioProjects/RoomDBViewModelLiveDataRecycler/RoomDbApp-master/RoomDemoApp/app/build/intermediates/dex/debug/mergeProjectDexDebug/classes.dex
 path.1=classes.dex
 base.0=/home/vinita/AndroidStudioProjects/RoomDBViewModelLiveDataRecycler/RoomDbApp-master/RoomDemoApp/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex

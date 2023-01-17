@@ -4,6 +4,8 @@ import androidx.room.DatabaseConfiguration;
 import androidx.room.InvalidationTracker;
 import androidx.room.RoomOpenHelper;
 import androidx.room.RoomOpenHelper.Delegate;
+import androidx.room.RoomOpenHelper.ValidationResult;
+import androidx.room.util.DBUtil;
 import androidx.room.util.TableInfo;
 import androidx.room.util.TableInfo.Column;
 import androidx.room.util.TableInfo.ForeignKey;
@@ -12,15 +14,15 @@ import androidx.sqlite.db.SupportSQLiteDatabase;
 import androidx.sqlite.db.SupportSQLiteOpenHelper;
 import androidx.sqlite.db.SupportSQLiteOpenHelper.Callback;
 import androidx.sqlite.db.SupportSQLiteOpenHelper.Configuration;
-import java.lang.IllegalStateException;
 import java.lang.Override;
 import java.lang.String;
 import java.lang.SuppressWarnings;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Set;
 
-@SuppressWarnings("unchecked")
-public class RoomAppDb_Impl extends RoomAppDb {
+@SuppressWarnings({"unchecked", "deprecation"})
+public final class RoomAppDb_Impl extends RoomAppDb {
   private volatile UserDao _userDao;
 
   @Override
@@ -30,12 +32,17 @@ public class RoomAppDb_Impl extends RoomAppDb {
       public void createAllTables(SupportSQLiteDatabase _db) {
         _db.execSQL("CREATE TABLE IF NOT EXISTS `userinfo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `name` TEXT NOT NULL, `email` TEXT NOT NULL)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"d738365feb64ec2d4cdb54c3ce167c0f\")");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'd738365feb64ec2d4cdb54c3ce167c0f')");
       }
 
       @Override
       public void dropAllTables(SupportSQLiteDatabase _db) {
         _db.execSQL("DROP TABLE IF EXISTS `userinfo`");
+        if (mCallbacks != null) {
+          for (int _i = 0, _size = mCallbacks.size(); _i < _size; _i++) {
+            mCallbacks.get(_i).onDestructiveMigration(_db);
+          }
+        }
       }
 
       @Override
@@ -59,20 +66,30 @@ public class RoomAppDb_Impl extends RoomAppDb {
       }
 
       @Override
-      protected void validateMigration(SupportSQLiteDatabase _db) {
+      public void onPreMigrate(SupportSQLiteDatabase _db) {
+        DBUtil.dropFtsSyncTriggers(_db);
+      }
+
+      @Override
+      public void onPostMigrate(SupportSQLiteDatabase _db) {
+      }
+
+      @Override
+      protected RoomOpenHelper.ValidationResult onValidateSchema(SupportSQLiteDatabase _db) {
         final HashMap<String, TableInfo.Column> _columnsUserinfo = new HashMap<String, TableInfo.Column>(3);
-        _columnsUserinfo.put("id", new TableInfo.Column("id", "INTEGER", true, 1));
-        _columnsUserinfo.put("name", new TableInfo.Column("name", "TEXT", true, 0));
-        _columnsUserinfo.put("email", new TableInfo.Column("email", "TEXT", true, 0));
+        _columnsUserinfo.put("id", new TableInfo.Column("id", "INTEGER", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsUserinfo.put("name", new TableInfo.Column("name", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsUserinfo.put("email", new TableInfo.Column("email", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         final HashSet<TableInfo.ForeignKey> _foreignKeysUserinfo = new HashSet<TableInfo.ForeignKey>(0);
         final HashSet<TableInfo.Index> _indicesUserinfo = new HashSet<TableInfo.Index>(0);
         final TableInfo _infoUserinfo = new TableInfo("userinfo", _columnsUserinfo, _foreignKeysUserinfo, _indicesUserinfo);
         final TableInfo _existingUserinfo = TableInfo.read(_db, "userinfo");
         if (! _infoUserinfo.equals(_existingUserinfo)) {
-          throw new IllegalStateException("Migration didn't properly handle userinfo(com.demo.roomdemo.db.UserEntity).\n"
+          return new RoomOpenHelper.ValidationResult(false, "userinfo(com.demo.roomdemo.db.UserEntity).\n"
                   + " Expected:\n" + _infoUserinfo + "\n"
                   + " Found:\n" + _existingUserinfo);
         }
+        return new RoomOpenHelper.ValidationResult(true, null);
       }
     }, "d738365feb64ec2d4cdb54c3ce167c0f", "4ce33ceb03ca5c3f353d42292537e5f2");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
@@ -85,7 +102,9 @@ public class RoomAppDb_Impl extends RoomAppDb {
 
   @Override
   protected InvalidationTracker createInvalidationTracker() {
-    return new InvalidationTracker(this, "userinfo");
+    final HashMap<String, String> _shadowTablesMap = new HashMap<String, String>(0);
+    HashMap<String, Set<String>> _viewTables = new HashMap<String, Set<String>>(0);
+    return new InvalidationTracker(this, _shadowTablesMap, _viewTables, "userinfo");
   }
 
   @Override

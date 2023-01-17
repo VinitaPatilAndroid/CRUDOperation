@@ -5,11 +5,15 @@ INJECTED from /home/vinita/AndroidStudioProjects/RoomDBViewModelLiveDataRecycler
 INJECTED from /home/vinita/AndroidStudioProjects/RoomDBViewModelLiveDataRecycler/RoomDbApp-master/RoomDemoApp/app/src/main/AndroidManifest.xml:2:1-21:12
 INJECTED from /home/vinita/AndroidStudioProjects/RoomDBViewModelLiveDataRecycler/RoomDbApp-master/RoomDemoApp/app/src/main/AndroidManifest.xml:2:1-21:12
 MERGED from [androidx.core:core-ktx:1.3.1] /home/vinita/.gradle/caches/transforms-2/files-2.1/b7e7c08114c1329e03c36452e60a142c/jetified-core-ktx-1.3.1/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.room:room-ktx:2.2.1] /home/vinita/.gradle/caches/transforms-2/files-2.1/0528227e42dda16fa73f7d28b847a1ed/jetified-room-ktx-2.2.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment-ktx:1.1.0] /home/vinita/.gradle/caches/transforms-2/files-2.1/f400fe76c70e71073a227fb5980e8a3a/jetified-fragment-ktx-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity-ktx:1.0.0] /home/vinita/.gradle/caches/transforms-2/files-2.1/d74f4f86de4e9ccb4429355be1e1ac21/jetified-activity-ktx-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0] /home/vinita/.gradle/caches/transforms-2/files-2.1/51ec66680c91a3611a77723b4652090e/jetified-lifecycle-viewmodel-ktx-2.1.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] /home/vinita/.gradle/caches/transforms-2/files-2.1/e46f3e16fd8948e8e4c48c913cb404d3/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/vinita/.gradle/caches/transforms-2/files-2.1/0686ca90b872620e1e93c4a9f2d2181e/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.recyclerview:recyclerview:1.2.0-alpha05] /home/vinita/.gradle/caches/transforms-2/files-2.1/0fe5fafc4e206157c7ed96ae6a129ff7/recyclerview-1.2.0-alpha05/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /home/vinita/.gradle/caches/transforms-2/files-2.1/98833e53bb355185e0f47305db61d10e/lifecycle-extensions-2.2.0/AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.room:room-runtime:2.3.0-alpha02] /home/vinita/.gradle/caches/transforms-2/files-2.1/f29620529c4a8997604276a534837133/room-runtime-2.3.0-alpha02/AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.room:room-runtime:2.2.1] /home/vinita/.gradle/caches/transforms-2/files-2.1/8d37d895ef9692dcf424185a06d4a1ac/room-runtime-2.2.1/AndroidManifest.xml:17:1-30:12
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/vinita/.gradle/caches/transforms-2/files-2.1/8bdc78f309f7ef2e274359e8a4f096da/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/vinita/.gradle/caches/transforms-2/files-2.1/f66fa33308b0619d349f33f29e1b9234/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.fragment:fragment:1.2.0] /home/vinita/.gradle/caches/transforms-2/files-2.1/62a0504f2daedb070cbda3421d31929f/fragment-1.2.0/AndroidManifest.xml:17:1-24:12
@@ -30,8 +34,8 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /home/vinita/.gra
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/vinita/.gradle/caches/transforms-2/files-2.1/ebcca62d7cfb14bdd40adc31f292a35f/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.savedstate:savedstate:1.0.0] /home/vinita/.gradle/caches/transforms-2/files-2.1/3a332f7b3ba12f0d97b1eff5486f8fcf/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /home/vinita/.gradle/caches/transforms-2/files-2.1/df4e9b3359966e99ba4d46a442645558/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.sqlite:sqlite-framework:2.1.0] /home/vinita/.gradle/caches/transforms-2/files-2.1/cc44fb15301f38c5be5bba7f754d036c/sqlite-framework-2.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.sqlite:sqlite:2.1.0] /home/vinita/.gradle/caches/transforms-2/files-2.1/82480ede89761411cd87ee914c8ed859/sqlite-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] /home/vinita/.gradle/caches/transforms-2/files-2.1/c081e07557e72a66c366bcc223986e55/sqlite-framework-2.0.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite:2.0.1] /home/vinita/.gradle/caches/transforms-2/files-2.1/2386b8ec8958041aa35e72e99e0d6f39/sqlite-2.0.1/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/vinita/.gradle/caches/transforms-2/files-2.1/b741faf0c0e978004788a3922a8a438d/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /home/vinita/.gradle/caches/transforms-2/files-2.1/32691ed1dd96a709bdd6754d66b7ebfd/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
 INJECTED from /home/vinita/AndroidStudioProjects/RoomDBViewModelLiveDataRecycler/RoomDbApp-master/RoomDemoApp/app/src/main/AndroidManifest.xml:2:1-21:12
@@ -57,8 +61,8 @@ MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/vinita/.gra
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/vinita/.gradle/caches/transforms-2/files-2.1/0686ca90b872620e1e93c4a9f2d2181e/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /home/vinita/.gradle/caches/transforms-2/files-2.1/98833e53bb355185e0f47305db61d10e/lifecycle-extensions-2.2.0/AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /home/vinita/.gradle/caches/transforms-2/files-2.1/98833e53bb355185e0f47305db61d10e/lifecycle-extensions-2.2.0/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.room:room-runtime:2.3.0-alpha02] /home/vinita/.gradle/caches/transforms-2/files-2.1/f29620529c4a8997604276a534837133/room-runtime-2.3.0-alpha02/AndroidManifest.xml:24:5-29:19
-MERGED from [androidx.room:room-runtime:2.3.0-alpha02] /home/vinita/.gradle/caches/transforms-2/files-2.1/f29620529c4a8997604276a534837133/room-runtime-2.3.0-alpha02/AndroidManifest.xml:24:5-29:19
+MERGED from [androidx.room:room-runtime:2.2.1] /home/vinita/.gradle/caches/transforms-2/files-2.1/8d37d895ef9692dcf424185a06d4a1ac/room-runtime-2.2.1/AndroidManifest.xml:24:5-28:19
+MERGED from [androidx.room:room-runtime:2.2.1] /home/vinita/.gradle/caches/transforms-2/files-2.1/8d37d895ef9692dcf424185a06d4a1ac/room-runtime-2.2.1/AndroidManifest.xml:24:5-28:19
 MERGED from [androidx.core:core:1.3.1] /home/vinita/.gradle/caches/transforms-2/files-2.1/00244e2ecd82b8e8696f962deb33b25d/core-1.3.1/AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.3.1] /home/vinita/.gradle/caches/transforms-2/files-2.1/00244e2ecd82b8e8696f962deb33b25d/core-1.3.1/AndroidManifest.xml:24:5-89
 MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/vinita/.gradle/caches/transforms-2/files-2.1/2361ea377168cc8246990125988fc654/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:24:5-30:19
@@ -74,21 +78,23 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/vinit
 	android:roundIcon
 		ADDED from /home/vinita/AndroidStudioProjects/RoomDBViewModelLiveDataRecycler/RoomDbApp-master/RoomDemoApp/app/src/main/AndroidManifest.xml:9:9-54
 	android:icon
-		ADDED from /home/vinita/AndroidStudioProjects/RoomDBViewModelLiveDataRecycler/RoomDbApp-master/RoomDemoApp/app/src/main/AndroidManifest.xml:7:9-43
+		ADDED from /home/vinita/AndroidStudioProjects/RoomDBViewModelLiveDataRecycler/RoomDbApp-master/RoomDemoApp/app/src/main/AndroidManifest.xml:7:9-40
 	android:allowBackup
 		ADDED from /home/vinita/AndroidStudioProjects/RoomDBViewModelLiveDataRecycler/RoomDbApp-master/RoomDemoApp/app/src/main/AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from /home/vinita/AndroidStudioProjects/RoomDBViewModelLiveDataRecycler/RoomDbApp-master/RoomDemoApp/app/src/main/AndroidManifest.xml:11:9-40
-activity#com.demo.roomdemo.MainActivity
+activity#com.demo.roomdemo.ToDoActivity
 ADDED from /home/vinita/AndroidStudioProjects/RoomDBViewModelLiveDataRecycler/RoomDbApp-master/RoomDemoApp/app/src/main/AndroidManifest.xml:12:9-18:20
+	android:exported
+		ADDED from /home/vinita/AndroidStudioProjects/RoomDBViewModelLiveDataRecycler/RoomDbApp-master/RoomDemoApp/app/src/main/AndroidManifest.xml:13:13-36
 	android:name
 		ADDED from /home/vinita/AndroidStudioProjects/RoomDBViewModelLiveDataRecycler/RoomDbApp-master/RoomDemoApp/app/src/main/AndroidManifest.xml:12:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/vinita/AndroidStudioProjects/RoomDBViewModelLiveDataRecycler/RoomDbApp-master/RoomDemoApp/app/src/main/AndroidManifest.xml:13:13-17:29
+ADDED from /home/vinita/AndroidStudioProjects/RoomDBViewModelLiveDataRecycler/RoomDbApp-master/RoomDemoApp/app/src/main/AndroidManifest.xml:14:13-17:29
 action#android.intent.action.MAIN
-ADDED from /home/vinita/AndroidStudioProjects/RoomDBViewModelLiveDataRecycler/RoomDbApp-master/RoomDemoApp/app/src/main/AndroidManifest.xml:14:17-69
+ADDED from /home/vinita/AndroidStudioProjects/RoomDBViewModelLiveDataRecycler/RoomDbApp-master/RoomDemoApp/app/src/main/AndroidManifest.xml:15:17-69
 	android:name
-		ADDED from /home/vinita/AndroidStudioProjects/RoomDBViewModelLiveDataRecycler/RoomDbApp-master/RoomDemoApp/app/src/main/AndroidManifest.xml:14:25-66
+		ADDED from /home/vinita/AndroidStudioProjects/RoomDBViewModelLiveDataRecycler/RoomDbApp-master/RoomDemoApp/app/src/main/AndroidManifest.xml:15:25-66
 category#android.intent.category.LAUNCHER
 ADDED from /home/vinita/AndroidStudioProjects/RoomDBViewModelLiveDataRecycler/RoomDbApp-master/RoomDemoApp/app/src/main/AndroidManifest.xml:16:17-77
 	android:name
@@ -99,6 +105,14 @@ INJECTED from /home/vinita/AndroidStudioProjects/RoomDBViewModelLiveDataRecycler
 INJECTED from /home/vinita/AndroidStudioProjects/RoomDBViewModelLiveDataRecycler/RoomDbApp-master/RoomDemoApp/app/src/main/AndroidManifest.xml
 MERGED from [androidx.core:core-ktx:1.3.1] /home/vinita/.gradle/caches/transforms-2/files-2.1/b7e7c08114c1329e03c36452e60a142c/jetified-core-ktx-1.3.1/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.core:core-ktx:1.3.1] /home/vinita/.gradle/caches/transforms-2/files-2.1/b7e7c08114c1329e03c36452e60a142c/jetified-core-ktx-1.3.1/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.room:room-ktx:2.2.1] /home/vinita/.gradle/caches/transforms-2/files-2.1/0528227e42dda16fa73f7d28b847a1ed/jetified-room-ktx-2.2.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-ktx:2.2.1] /home/vinita/.gradle/caches/transforms-2/files-2.1/0528227e42dda16fa73f7d28b847a1ed/jetified-room-ktx-2.2.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.1.0] /home/vinita/.gradle/caches/transforms-2/files-2.1/f400fe76c70e71073a227fb5980e8a3a/jetified-fragment-ktx-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.1.0] /home/vinita/.gradle/caches/transforms-2/files-2.1/f400fe76c70e71073a227fb5980e8a3a/jetified-fragment-ktx-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.0.0] /home/vinita/.gradle/caches/transforms-2/files-2.1/d74f4f86de4e9ccb4429355be1e1ac21/jetified-activity-ktx-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.0.0] /home/vinita/.gradle/caches/transforms-2/files-2.1/d74f4f86de4e9ccb4429355be1e1ac21/jetified-activity-ktx-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0] /home/vinita/.gradle/caches/transforms-2/files-2.1/51ec66680c91a3611a77723b4652090e/jetified-lifecycle-viewmodel-ktx-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0] /home/vinita/.gradle/caches/transforms-2/files-2.1/51ec66680c91a3611a77723b4652090e/jetified-lifecycle-viewmodel-ktx-2.1.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.1.0] /home/vinita/.gradle/caches/transforms-2/files-2.1/e46f3e16fd8948e8e4c48c913cb404d3/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.1.0] /home/vinita/.gradle/caches/transforms-2/files-2.1/e46f3e16fd8948e8e4c48c913cb404d3/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/vinita/.gradle/caches/transforms-2/files-2.1/0686ca90b872620e1e93c4a9f2d2181e/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
@@ -107,8 +121,8 @@ MERGED from [androidx.recyclerview:recyclerview:1.2.0-alpha05] /home/vinita/.gra
 MERGED from [androidx.recyclerview:recyclerview:1.2.0-alpha05] /home/vinita/.gradle/caches/transforms-2/files-2.1/0fe5fafc4e206157c7ed96ae6a129ff7/recyclerview-1.2.0-alpha05/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /home/vinita/.gradle/caches/transforms-2/files-2.1/98833e53bb355185e0f47305db61d10e/lifecycle-extensions-2.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /home/vinita/.gradle/caches/transforms-2/files-2.1/98833e53bb355185e0f47305db61d10e/lifecycle-extensions-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.room:room-runtime:2.3.0-alpha02] /home/vinita/.gradle/caches/transforms-2/files-2.1/f29620529c4a8997604276a534837133/room-runtime-2.3.0-alpha02/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.room:room-runtime:2.3.0-alpha02] /home/vinita/.gradle/caches/transforms-2/files-2.1/f29620529c4a8997604276a534837133/room-runtime-2.3.0-alpha02/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-runtime:2.2.1] /home/vinita/.gradle/caches/transforms-2/files-2.1/8d37d895ef9692dcf424185a06d4a1ac/room-runtime-2.2.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-runtime:2.2.1] /home/vinita/.gradle/caches/transforms-2/files-2.1/8d37d895ef9692dcf424185a06d4a1ac/room-runtime-2.2.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/vinita/.gradle/caches/transforms-2/files-2.1/8bdc78f309f7ef2e274359e8a4f096da/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/vinita/.gradle/caches/transforms-2/files-2.1/8bdc78f309f7ef2e274359e8a4f096da/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/vinita/.gradle/caches/transforms-2/files-2.1/f66fa33308b0619d349f33f29e1b9234/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
@@ -149,10 +163,10 @@ MERGED from [androidx.savedstate:savedstate:1.0.0] /home/vinita/.gradle/caches/t
 MERGED from [androidx.savedstate:savedstate:1.0.0] /home/vinita/.gradle/caches/transforms-2/files-2.1/3a332f7b3ba12f0d97b1eff5486f8fcf/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /home/vinita/.gradle/caches/transforms-2/files-2.1/df4e9b3359966e99ba4d46a442645558/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /home/vinita/.gradle/caches/transforms-2/files-2.1/df4e9b3359966e99ba4d46a442645558/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.sqlite:sqlite-framework:2.1.0] /home/vinita/.gradle/caches/transforms-2/files-2.1/cc44fb15301f38c5be5bba7f754d036c/sqlite-framework-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.sqlite:sqlite-framework:2.1.0] /home/vinita/.gradle/caches/transforms-2/files-2.1/cc44fb15301f38c5be5bba7f754d036c/sqlite-framework-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.sqlite:sqlite:2.1.0] /home/vinita/.gradle/caches/transforms-2/files-2.1/82480ede89761411cd87ee914c8ed859/sqlite-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.sqlite:sqlite:2.1.0] /home/vinita/.gradle/caches/transforms-2/files-2.1/82480ede89761411cd87ee914c8ed859/sqlite-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] /home/vinita/.gradle/caches/transforms-2/files-2.1/c081e07557e72a66c366bcc223986e55/sqlite-framework-2.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] /home/vinita/.gradle/caches/transforms-2/files-2.1/c081e07557e72a66c366bcc223986e55/sqlite-framework-2.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.0.1] /home/vinita/.gradle/caches/transforms-2/files-2.1/2386b8ec8958041aa35e72e99e0d6f39/sqlite-2.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.0.1] /home/vinita/.gradle/caches/transforms-2/files-2.1/2386b8ec8958041aa35e72e99e0d6f39/sqlite-2.0.1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/vinita/.gradle/caches/transforms-2/files-2.1/b741faf0c0e978004788a3922a8a438d/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/vinita/.gradle/caches/transforms-2/files-2.1/b741faf0c0e978004788a3922a8a438d/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.interpolator:interpolator:1.0.0] /home/vinita/.gradle/caches/transforms-2/files-2.1/32691ed1dd96a709bdd6754d66b7ebfd/interpolator-1.0.0/AndroidManifest.xml:20:5-44
@@ -168,13 +182,11 @@ INJECTED from /home/vinita/AndroidStudioProjects/RoomDBViewModelLiveDataRecycler
 		ADDED from /home/vinita/AndroidStudioProjects/RoomDBViewModelLiveDataRecycler/RoomDbApp-master/RoomDemoApp/app/src/main/AndroidManifest.xml
 		INJECTED from /home/vinita/AndroidStudioProjects/RoomDBViewModelLiveDataRecycler/RoomDbApp-master/RoomDemoApp/app/src/main/AndroidManifest.xml
 service#androidx.room.MultiInstanceInvalidationService
-ADDED from [androidx.room:room-runtime:2.3.0-alpha02] /home/vinita/.gradle/caches/transforms-2/files-2.1/f29620529c4a8997604276a534837133/room-runtime-2.3.0-alpha02/AndroidManifest.xml:25:9-28:40
+ADDED from [androidx.room:room-runtime:2.2.1] /home/vinita/.gradle/caches/transforms-2/files-2.1/8d37d895ef9692dcf424185a06d4a1ac/room-runtime-2.2.1/AndroidManifest.xml:25:9-27:40
 	android:exported
-		ADDED from [androidx.room:room-runtime:2.3.0-alpha02] /home/vinita/.gradle/caches/transforms-2/files-2.1/f29620529c4a8997604276a534837133/room-runtime-2.3.0-alpha02/AndroidManifest.xml:28:13-37
-	android:directBootAware
-		ADDED from [androidx.room:room-runtime:2.3.0-alpha02] /home/vinita/.gradle/caches/transforms-2/files-2.1/f29620529c4a8997604276a534837133/room-runtime-2.3.0-alpha02/AndroidManifest.xml:27:13-43
+		ADDED from [androidx.room:room-runtime:2.2.1] /home/vinita/.gradle/caches/transforms-2/files-2.1/8d37d895ef9692dcf424185a06d4a1ac/room-runtime-2.2.1/AndroidManifest.xml:27:13-37
 	android:name
-		ADDED from [androidx.room:room-runtime:2.3.0-alpha02] /home/vinita/.gradle/caches/transforms-2/files-2.1/f29620529c4a8997604276a534837133/room-runtime-2.3.0-alpha02/AndroidManifest.xml:26:13-74
+		ADDED from [androidx.room:room-runtime:2.2.1] /home/vinita/.gradle/caches/transforms-2/files-2.1/8d37d895ef9692dcf424185a06d4a1ac/room-runtime-2.2.1/AndroidManifest.xml:26:13-74
 provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
 ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/vinita/.gradle/caches/transforms-2/files-2.1/2361ea377168cc8246990125988fc654/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
 	android:authorities

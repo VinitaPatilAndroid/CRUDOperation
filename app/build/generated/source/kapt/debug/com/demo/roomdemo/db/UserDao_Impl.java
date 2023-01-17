@@ -1,33 +1,41 @@
 package com.demo.roomdemo.db;
 
 import android.database.Cursor;
+import androidx.room.CoroutinesRoom;
 import androidx.room.EntityDeletionOrUpdateAdapter;
 import androidx.room.EntityInsertionAdapter;
 import androidx.room.RoomDatabase;
 import androidx.room.RoomSQLiteQuery;
+import androidx.room.util.CursorUtil;
+import androidx.room.util.DBUtil;
 import androidx.sqlite.db.SupportSQLiteStatement;
+import java.lang.Exception;
+import java.lang.Object;
 import java.lang.Override;
 import java.lang.String;
 import java.lang.SuppressWarnings;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.Callable;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
 
-@SuppressWarnings("unchecked")
-public class UserDao_Impl implements UserDao {
+@SuppressWarnings({"unchecked", "deprecation"})
+public final class UserDao_Impl implements UserDao {
   private final RoomDatabase __db;
 
-  private final EntityInsertionAdapter __insertionAdapterOfUserEntity;
+  private final EntityInsertionAdapter<UserEntity> __insertionAdapterOfUserEntity;
 
-  private final EntityDeletionOrUpdateAdapter __deletionAdapterOfUserEntity;
+  private final EntityDeletionOrUpdateAdapter<UserEntity> __deletionAdapterOfUserEntity;
 
-  private final EntityDeletionOrUpdateAdapter __updateAdapterOfUserEntity;
+  private final EntityDeletionOrUpdateAdapter<UserEntity> __updateAdapterOfUserEntity;
 
   public UserDao_Impl(RoomDatabase __db) {
     this.__db = __db;
     this.__insertionAdapterOfUserEntity = new EntityInsertionAdapter<UserEntity>(__db) {
       @Override
       public String createQuery() {
-        return "INSERT OR ABORT INTO `userinfo`(`id`,`name`,`email`) VALUES (nullif(?, 0),?,?)";
+        return "INSERT OR REPLACE INTO `userinfo` (`id`,`name`,`email`) VALUES (nullif(?, 0),?,?)";
       }
 
       @Override
@@ -81,47 +89,66 @@ public class UserDao_Impl implements UserDao {
   }
 
   @Override
-  public void insertUser(UserEntity user) {
-    __db.beginTransaction();
-    try {
-      __insertionAdapterOfUserEntity.insert(user);
-      __db.setTransactionSuccessful();
-    } finally {
-      __db.endTransaction();
-    }
+  public Object insertUser(final UserEntity user, final Continuation<? super Unit> p1) {
+    return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
+      @Override
+      public Unit call() throws Exception {
+        __db.beginTransaction();
+        try {
+          __insertionAdapterOfUserEntity.insert(user);
+          __db.setTransactionSuccessful();
+          return Unit.INSTANCE;
+        } finally {
+          __db.endTransaction();
+        }
+      }
+    }, p1);
   }
 
   @Override
-  public void deleteUser(UserEntity user) {
-    __db.beginTransaction();
-    try {
-      __deletionAdapterOfUserEntity.handle(user);
-      __db.setTransactionSuccessful();
-    } finally {
-      __db.endTransaction();
-    }
+  public Object deleteUser(final UserEntity user, final Continuation<? super Unit> p1) {
+    return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
+      @Override
+      public Unit call() throws Exception {
+        __db.beginTransaction();
+        try {
+          __deletionAdapterOfUserEntity.handle(user);
+          __db.setTransactionSuccessful();
+          return Unit.INSTANCE;
+        } finally {
+          __db.endTransaction();
+        }
+      }
+    }, p1);
   }
 
   @Override
-  public void updateUser(UserEntity user) {
-    __db.beginTransaction();
-    try {
-      __updateAdapterOfUserEntity.handle(user);
-      __db.setTransactionSuccessful();
-    } finally {
-      __db.endTransaction();
-    }
+  public Object updateUser(final UserEntity user, final Continuation<? super Unit> p1) {
+    return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
+      @Override
+      public Unit call() throws Exception {
+        __db.beginTransaction();
+        try {
+          __updateAdapterOfUserEntity.handle(user);
+          __db.setTransactionSuccessful();
+          return Unit.INSTANCE;
+        } finally {
+          __db.endTransaction();
+        }
+      }
+    }, p1);
   }
 
   @Override
   public List<UserEntity> getAllUserInfo() {
     final String _sql = "SELECT * FROM userinfo ORDER BY id DESC";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
-    final Cursor _cursor = __db.query(_statement);
+    __db.assertNotSuspendingTransaction();
+    final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
     try {
-      final int _cursorIndexOfId = _cursor.getColumnIndexOrThrow("id");
-      final int _cursorIndexOfName = _cursor.getColumnIndexOrThrow("name");
-      final int _cursorIndexOfEmail = _cursor.getColumnIndexOrThrow("email");
+      final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
+      final int _cursorIndexOfName = CursorUtil.getColumnIndexOrThrow(_cursor, "name");
+      final int _cursorIndexOfEmail = CursorUtil.getColumnIndexOrThrow(_cursor, "email");
       final List<UserEntity> _result = new ArrayList<UserEntity>(_cursor.getCount());
       while(_cursor.moveToNext()) {
         final UserEntity _item;
